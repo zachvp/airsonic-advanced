@@ -145,8 +145,7 @@ public class ExternalPlayerController {
         String streamUrl = baseUrl + jwtSecurityService
                 .addJWTToken(User.USERNAME_GUEST, UriComponentsBuilder.fromUriString(prefix + "/stream")
                         .queryParam("id", mediaFile.getId())
-                        .queryParam("player", player.getId())
-                        .queryParam("format", "raw"),
+                        .queryParam("player", player.getId()),
                 expires).build().toUriString();
         if (mediaFile.isVideo()) {
             streamable = videoPlayerController.isStreamable(mediaFile);
