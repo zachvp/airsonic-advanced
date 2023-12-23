@@ -33,3 +33,4 @@ docker container rm airsonic-test
 * StringUtil.java
 * externalPlayer.jsp
 * ExternalPlayerController.java
+* TranscodingService.java
